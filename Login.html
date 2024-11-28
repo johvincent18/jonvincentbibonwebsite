@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width," initial-scale="1.0">
+        <title>Member Login</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        min-height: 100vh;
+        }
+        form{
+            max-width: 800px;
+            margin: auto;
+        }
+        fieldset{
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: rgb(147, 149, 161);
+        }
+        legend {
+            font-weight: bold;
+        }
+        p{
+            margin: 10px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+            align-content: 50;
+        }
+        button {
+            background-color: #457246;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+          label{
+            align-content: 20px;
+          }
+    </style>
+    </head>
+    
+    <body>
+        <form>
+            <fieldset>
+            <p><h1>Member Login</h1></p>
+            <p>
+            <label>Email</label><br>
+            <input type="Email" id="email" name="Email" required>
+            <i class='bx bx-envelope'></i>
+            </p>
+            <p>
+            <label>Password</label><br>
+            <input type="Password" id="Password" class="Password" required>
+            <i class='bx bxs-lock'></i>
+            </p>
+            <p class="Remember-Forgot"></p>
+            <label><input type="checkbox">Remember Me </label>
+        </p>
+            <p>
+            <button type="submit">Login</button><br>
+              <label"><p><a href=" Forgot Username/Password?">Forgot Username/Password?</a><p></label>
+                <nav>
+                    <a href="Home.html" class="Home">Home</a>
+                </nav>
+              </fieldset>  
+        </form>
+    </body>
+</html>

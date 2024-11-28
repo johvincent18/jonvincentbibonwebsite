@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width," initial-scale="1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Home</title>
+
+    </head>
+    <style>
+         
+    nav{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        font-family:'Poppins',sans-serif ;
+    }
+    
+    
+    nav a{
+        font-size: 1.8rem;
+        color: blanchedalmond;
+        margin-left: 4rem;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom:3px solid transparent;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        background-color: rgba(89, 89, 90, 0.527);
+        color: rgb(36, 43, 43);
+    }
+    nav a{
+        font-size: 1.8rem;
+        color: blanchedalmond;
+        margin-left: 4rem;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom:3px solid transparent;
+    }
+
+    nav a:hover,
+    nav a.active{
+        color: blanchedalmond;
+        border-bottom:3px solid #b74b7b47;
+    }
+
+    @media(max-width:995px){
+     nav{
+        position:absolute;
+        display: none;
+        top: 0%;
+        right:100px;
+        border-left:3px solid#b74b7b47;
+        border-bottom-left-radius:2rem;
+        padding: 1rem  solid;
+        background-color: #865e5e;
+        border-top: 0.1rem solid rgba(215, 162, 162, 0.1);
+    }
+    
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem;
+    }
+    
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius:0.5rem;
+        border-bottom:0.5rem solid #b74b7b47;
+    }
+ }
+
+          .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        background-color:rgb(70, 87, 88);
+    }
+
+    .home.home-content h1{
+        font-size: 6rem;
+        font-weight: 700;
+        line-height:1.3;
+    }
+    span{
+        color: #b74b7b47;
+    }
+    
+
+    .home-content p{
+        font-size: 1.4rem;
+    }
+
+    .home.home-content h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .home-img{
+        border-radius: 50%;
+    }
+
+    .home-img img{
+        position: relative;
+        width: 39vw;
+        border-radius: 50%;
+        box-shadow:0 0 35px solid #b74b7b47;
+        cursor:pointer;
+        transition: 0.2 linear;
+    }
+    .home-img img:hover{
+        font-size: 1.8rem;
+        font-weight:500;
+    }
+
+          @media (max-width: 1000px){
+        .home{
+            gap: 4rem;
+        }
+         }
+          @media(max-width:995px){
+        home{
+            flex-direction: column;
+            margin: 5rem 4rem;
+        }
+
+        .home.home.home-content h3{
+            font-size: 2,5;
+        }
+        .home-content h1{
+            font-size:5rem;
+        }
+
+        .home-img img{
+            width: 70;
+            margin-top: 4rem;
+        }
+    }
+    .btn{
+        display:inline-block;
+        padding: 1rem 2.8rem;
+        background-color: rgba(86, 127, 142, 0.434);
+        border-radius: 4rem;
+        font-size:1.6rem;
+        color:#30787c;
+        letter-spacing: 0.3rem;
+        font-weight: 600;
+        border: 2px solid #a47f7f;
+        transition: 0.3 ease;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        transform: scale3d(10.3);
+        background-color: #7f5c5c;
+        color: black;
+        box-shadow: 0 0 25px #b74b4b;
+    }
+    </style>
+    <header>
+        <nav>
+      <a href="#" class="logo">Computer Programming</a>
+        </nav>
+     <div class="home-img">
+        <img src="https://thumbor.forbes.com/thumbor/fit-in/1290x/https://www.forbes.com/advisor/wp-content/uploads/2022/06/Computer_programmer.jpeg.jpg" alt="">
+    </div>
+    <body>
+        <nav>
+            <a href="Login.html" class="Login">Login</a>
+            <a href="Registration.html" class="Registration">Registration</a>
+            <a href="Biography.html" class="Biography">Biography</a>
+         <header></header>   
+        </nav>
+    </body>
+</html>

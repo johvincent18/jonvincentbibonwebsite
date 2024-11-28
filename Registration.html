@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Registration</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+         body{
+         display: flex;
+        justify-self: center;
+        align-items: center;
+        min-height: 100vh;
+        }
+        form{
+            max-width: 800px;
+            margin: auto;
+        }
+       
+        fieldset{
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: rgb(147, 149, 161);
+        }
+        legend {
+            font-weight: bold;
+        }
+        p{
+            margin: 10px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        input [type="text"]
+        select{
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+            align-content: 50;
+          
+        }
+        button {
+            background-color: #457246;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+          label{
+            align-content: 20px;
+          }
+          nav a{
+        font-size: 1.8rem;
+        color: blanchedalmond;
+        margin-left: 4rem;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom:3px solid transparent;
+    }
+
+    nav a:hover,
+    nav a.active{
+        color: blanchedalmond;
+        border-bottom:3px solid #b74b7b47;
+    }
+
+    @media(max-width:995px){
+     nav{
+        position:absolute;
+        display: none;
+        top: 0%;
+        right:100px;
+        border-left:3px solid#b74b7b47;
+        border-bottom-left-radius:2rem;
+        padding: 1rem  solid;
+        background-color: #865e5e;
+        border-top: 0.1rem solid rgba(215, 162, 162, 0.1);
+    }
+    
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem;
+    }
+    
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius:0.5rem;
+        border-bottom:0.5rem solid #b74b7b47;
+    }
+ }
+
+          .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        background-color:rgb(70, 87, 88);
+    }
+
+    .home.home-content h1{
+        font-size: 6rem;
+        font-weight: 700;
+        line-height:1.3;
+    }
+    span{
+        color: #b74b7b47;
+    }
+    
+
+    .home-content p{
+        font-size: 1.4rem;
+    }
+
+    .home.home-content h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .home-img{
+        border-radius: 50%;
+    }
+
+    .home-img img{
+        position: relative;
+        width: 39vw;
+        border-radius: 50%;
+        box-shadow:0 0 35px solid #b74b7b47;
+        cursor:pointer;
+        transition: 0.2 linear;
+    }
+    .home-img img:hover{
+        font-size: 1.8rem;
+        font-weight:500;
+    }
+
+          @media (max-width: 1000px){
+        .home{
+            gap: 4rem;
+        }
+         }
+          @media(max-width:995px){
+        home{
+            flex-direction: column;
+            margin: 5rem 4rem;
+        }
+
+        .home.home.home-content h3{
+            font-size: 2,5;
+        }
+        .home-content h1{
+            font-size:5rem;
+        }
+
+        .home-img img{
+            width: 70;
+            margin-top: 4rem;
+        }
+    }
+        </style>
+    </head>
+    <body>
+         <body style="background-color:rgba(89, 89, 90, 0.527);">
+            <nav>
+                <a href="Home.html" class="Home">Home</a>
+            </nav>
+             <form>
+                 <h1>Registration</h1>                         
+                  <fieldset>
+                    <legend>Account Details</legend>
+                   <p>
+            <label for="email"> Email</label>
+            <i class='bx bx-envelope'></i>
+             <input type="email" id="email" name="email" required>
+              <label for="Repeat Email"> Repeat Email</label>
+              <i class='bx bx-envelope'></i>
+            <input type="Reapet Email" id="Repeat Email" name="Reapet Email">
+             </p>         
+        <p>
+            <label>Password</label>
+            <i class='bx bxs-lock'></i>
+            <input type="Password" id="Password" name="Password" required>
+            <label>Repaet Password"</label>
+            <i class='bx bxs-lock'></i>
+            <input type="Repaet Password" id="Repeat Password" name="Password" required>
+        </p>
+         </fieldset>
+
+         <fieldset>
+        <legend>Personal Details</legend>
+        <h1><i class='bx bx-user-circle'></i></h1>
+        <p>
+            <label> Last Name</label>
+            <input type="text" class="lname"><br>
+            <label>First Name</label>
+            <input type="text" class=" fname"><br>
+            <label> Middle Name</label>
+            <input type="text" class="mname"><br>
+        </p>
+        <p>
+            <label>Street*</label>
+            <i class='bx bx-home-alt'></i>
+            <input type="text" class="Street">
+            <label>City*</label>
+            <i class='bx bx-location-plus'></i>
+            <input type="text" class="City"><br>
+            <label>Country</label>
+            <i class='bx bx-world'></i>
+            <select>
+                <option value="" disabled selected>Select Country</option>
+                <option>China</option>
+                <option>Indonesia</option>
+                <option>Japan</option>
+                <option>Philippines</option>
+                <option>Vietnam</option>
+                <option>Iran</option>
+                <option>Thailand</option>
+            </select>
+            <label>Province</label>
+            <i class='bx bx-home'></i>
+            <select>
+                <option value="" disabled selected>Select Province</option>
+                <option>Batangas</option>
+                <option>Cagayan</option> 
+                <option>Laguna</option>
+                <option>Abra</option>
+                <option>Cavite</option>
+                <option>Cebu</option>
+            </select>
+            <p>
+            <label>Mobile Number</label>
+            <i class='bx bx-phone' ></i>
+            <input type="tel" id="mobile-number" name="mobile-number" required>
+            </p>
+            <p>
+            <label>Website</label>
+            <i class='bx bx-link'></i>
+            <input type="url" id="website" name="website">
+            </p>
+        </p>
+             </fieldset>
+
+             <fieldset>
+            <legend>Futher Information</legend>
+        <P>
+           <label>Gender*</label> 
+           <label"> Male</label>
+           <i class='bx bx-male-sign'></i>
+           <input type="radio" class="Male">
+           <label>Female</label>
+           <i class='bx bx-female-sign' ></i>
+           <input type="radio" class="Famale"><br>
+           <label>Birthday*</label>
+           <i class='bx bx-calendar'></i>
+           <input type="date">
+           <label>Nationality*</label>
+           <i class='bx bxs-contact'></i>
+           <select>
+            <option value="" disabled selected>Select Nationality</option>
+            <option>American</option>
+            <option>Cambodian</option>
+            <option>Chinese</option>
+            <option>Filipino</option>
+            <option>German</option>
+            <option>Indonesian</option>
+           </select><br>    
+
+        <label>Civil Status*</label><br>
+        <i class='bx bx-user'></i>
+        <label for="single">Single</label>
+        <input type="radio"name="civil-status" value="Single">
+        <i class='bx bx-male-female'></i>
+        <label for="married">Married</label>
+        <input type="radio" name="civil-status" value="Married">
+        <i class='bx bx-ghost'></i>
+        <label for="widowed">Widowed</label>
+        <input type="radio"name="civil-status" value="Widowed">
+            <label>(Select One Only)</label>
+           <label><h2>Helpful Information</h2></label> 
+           <label>Please provide the neccessary Information </label>
+        </p>
+         </fieldset>
+
+         <fieldset>
+            <p>
+            <legend>Terms and Miling </legend>
+            <input type="checkbox" value="terms">
+            I accept to the <a  href="/terms">Terms and Conditions</a><br>
+            <input type="checkbox" class=""> I want to receive personalized offers by your site<br>
+            <input type="checkbox" class=""> Allow partners to send me personalized offer and related service<br>
+            </p>
+         </fieldset>
+         <p>
+            <button type="Submit">Submit</button>
+        </p>
+
+     </form>
+     </body>
+    </body>
+</html>
